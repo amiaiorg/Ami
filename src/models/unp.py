@@ -1,6 +1,8 @@
 import json
 import os
 import math
+import threading
+import time
 
 class UserNeuralPattern:
     def __init__(self, user_id):
@@ -38,6 +40,18 @@ class AwareAI:
     def __init__(self):
         self.current_user = None
         self.model = Model(input_dim=10, output_dim=5)  # Example dimensions
+        self.harmonic_balancer = HarmonicBalancer(num_qubits=4, max_iterations=1000, harmony_memory_size=20)
+        self.recalibration_interval = 3600  # Recalibrate every hour
+
+    def start_recalibration(self):
+        threading.Thread(target=self.recalibration_loop).start()
+
+    def recalibration_loop(self):
+        while True:
+            time.sleep(self.recalibration_interval)
+            print("Performing periodic recalibration...")
+            best_solution, best_score = self.harmonic_balancer.run_experiment()
+            print(f"Recalibrated with best solution: {best_solution} and score: {best_score}")
 
     def generate_response(self, user_state, interaction_data):
         initial_response = self.model.predict_drl(torch.tensor(interaction_data, dtype=torch.float32))
