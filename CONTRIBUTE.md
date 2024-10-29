@@ -22,7 +22,7 @@ We welcome pull requests for bug fixes, improvements, and new features. To submi
 2. **Clone the Repository**: Clone your forked repository to your local machine.
     ```sh
     git clone https://github.com/amiaiorg/Ami.git
-    cd harmonic-balancer-project-final
+    cd Ami
     ```
 
 3. **Create a Branch**: Create a new branch for your changes.
