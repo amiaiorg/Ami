@@ -1,0 +1,4 @@
+numpy
+torch
+azureml-core
+matplotlib
