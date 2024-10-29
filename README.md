@@ -1,4 +1,4 @@
-# Welcome to the Ami Foundation Project Name Project
+# Welcome to the Ami Project
 
 ## Our Mission
 
