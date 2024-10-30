@@ -7,7 +7,8 @@ class EthicsHandler:
             "Polarity": "Everything is dual; everything has poles; everything has its pair of opposites.",
             "Rhythm": "Everything flows, out and in; everything has its tides; all things rise and fall.",
             "Cause and Effect": "Every cause has its effect; every effect has its cause.",
-            "Gender": "Gender is in everything; everything has its masculine and feminine principles."
+            "Gender": "Gender is in everything; everything has its masculine and feminine principles.",
+            "Perspective": "The angle or direction in which a person looks at an object; the ability to understand what is important and what isn't."
         }
 
     def apply_principle(self, principle, context):
@@ -25,6 +26,8 @@ class EthicsHandler:
             return self.apply_cause_and_effect(context)
         elif principle == "Gender":
             return self.apply_gender(context)
+        elif principle == "Perspective":
+            return self.apply_perspective(context)
         else:
             raise ValueError(f"Unknown principle: {principle}")
 
@@ -56,7 +59,6 @@ class EthicsHandler:
         context["gender"] = True
         return context
 
-    def apply_fools_wisdom(self, context):
-        context["learning_from_mistakes"] = True
-        context["resilience_and_adaptability"] = True
+    def apply_perspective(self, context):
+        context["perspective"] = True
         return context
