@@ -22,8 +22,7 @@ Our work is guided by the **Seven Hermetic Principles** and the concept of **Foo
 5. **Rhythm**: Everything flows in and out; everything has its tides.
 6. **Cause and Effect**: Every cause has its effect; every effect has its cause.
 7. **Gender**: Gender is in everything; everything has masculine and feminine principles.
-
-**Fool's Wisdom**: Embrace mistakes as learning opportunities; approach challenges with joy and resilience.
+8. **Perspective**: "The angle or direction in which a person looks at an object; the ability to understand what is important and what isn't.
 
 ## Ami.
 
