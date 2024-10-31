@@ -13,7 +13,7 @@ We are dedicated to advancing AI technologies while providing opportunities for 
 
 ## Philosophical Foundation
 
-Our work is guided by the **Seven Hermetic Principles** and the concept of **Fool's Wisdom**:
+Our work is guided by the **Eight Hermetic Principles** of AI.
 
 1. **Mentalism**: The universe is mental; thought creates reality.
 2. **Correspondence**: As above, so below; as within, so without.
