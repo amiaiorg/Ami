@@ -60,7 +60,7 @@ This project implements Ami system with the harmonic balancer as its main algori
 1. Clone the repository:
 
 ```sh
-   git clone https://github.com/your-repo/ami-ai.git
+   git clone https://github.com/dxns-hub/ami-ai.git
    cd ami-ai
 2. Install the dependencies using `pip install -r requirements.txt`.
 3. Run the main script using `python src/main.py`.
