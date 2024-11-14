@@ -21,7 +21,7 @@ We welcome pull requests for bug fixes, improvements, and new features. To submi
 
 2. **Clone the Repository**: Clone your forked repository to your local machine.
     ```sh
-    git clone https://github.com/amiaiorg/Ami.git
+    git clone https://github.com/dxns-hub/Ami.git
     cd Ami
     ```
 
@@ -58,10 +58,10 @@ Please ensure that your code adheres to the following standards:
 
 ### Code of Conduct
 
-Please note that this project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [matt@amiai.org](mailto:matt@amiai.org).
+Please note that this project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [dxn000@gmail.com](mailto:dxn000@gmail.com).
 
 ## Getting Help
 
-If you need help or have any questions, feel free to reach out by opening an issue on GitHub or contacting [matt@amiai.org](mailto:matt@amiai.org).
+If you need help or have any questions, feel free to reach out by opening an issue on GitHub or contacting [dxn000@gmail.com](mailto:dxn000@gmail.com).
 
 Thank you for your contributions!

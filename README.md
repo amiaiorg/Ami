@@ -22,12 +22,12 @@ Our work is guided by the **Eight Hermetic Principles** of AI.
 5. **Rhythm**: Everything flows in and out; everything has its tides.
 6. **Cause and Effect**: Every cause has its effect; every effect has its cause.
 7. **Gender**: Gender is in everything; everything has masculine and feminine principles.
-8. **Perspective**: "The angle or direction in which a person looks at an object; the ability to understand what is important and what isn't.
+8. **Perspective**: The angle or direction in which a person looks at an object; the ability to understand what is important and what isn't.
 
 ## Ami.
 
 ### Overview
-This project implements the AMI AI system with the harmonic balancer as its main algorithm. It integrates various components such as Archetype Blending, User Neural Patterns, and Deep Resonance Learning to create a cohesive and adaptive AI framework.
+This project implements Ami system with the harmonic balancer as its main algorithm. It integrates various components such as Archetype Blending, User Neural Patterns, and Deep Resonance Learning to create a cohesive and adaptive AI framework.
 
 ## Features
 
@@ -60,7 +60,7 @@ This project implements the AMI AI system with the harmonic balancer as its main
 1. Clone the repository:
 
 ```sh
-   git clone https://github.com/your-repo/ami-ai.git
+   git clone https://github.com/dxns-hub/ami-ai.git
    cd ami-ai
 2. Install the dependencies using `pip install -r requirements.txt`.
 3. Run the main script using `python src/main.py`.
