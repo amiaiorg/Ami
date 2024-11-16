@@ -1,46 +1,7 @@
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import DataLoader, TensorDataset
 from models.model import Model
 from data_sources.archetypes import ArchetypeBlender
 from data_sources.user_neural_pattern import UserNeuralPattern
-import spacy
-
-# Load the spaCy model
-nlp = spacy.load("en_core_web_sm")
-
-# Define a simple neural network
-class SimpleNN(nn.Module):
-    def __init__(self, input_dim, output_dim):
-        super(SimpleNN, self).__init__()
-        self.fc = nn.Linear(input_dim, output_dim)
-
-    def forward(self, x):
-        return self.fc(x)
-
-def process_message(message):
-    doc = nlp(message)
-    for entity in doc.ents:
-        print(entity.text, entity.label_)
-
-def train_model(data, targets):
-    model = SimpleNN(input_dim=10, output_dim=5)
-    criterion = nn.MSELoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
-    dataset = TensorDataset(data, targets)
-    dataloader = DataLoader(dataset, batch_size=10, shuffle=True)
-
-    for epoch in range(10):
-        for inputs, labels in dataloader:
-            optimizer.zero_grad()
-            outputs = model(inputs)
-            loss = criterion(outputs, labels)
-            loss.backward()
-            optimizer.step()
-        print(f"Epoch {epoch+1}, Loss: {loss.item()}")
-
-    torch.save(model.state_dict(), "chat_model.pth")
+import torch
 
 def main():
     print("Welcome to AMI")
@@ -76,46 +37,13 @@ def main():
     # Preliminary test: Make predictions
     test_data = torch.randn(10, input_dim)
     drl_predictions = model.predict_drl(test_data)
-    upn_predictions = model.predict_upn(test_data)
     print("DRL Predictions:", drl_predictions)
-    print("UPN Predictions:", upn_predictions)
 
-    # Apply ethical principles
-    context = {}
-    context = model.apply_ethics("Mentalism", context)
-    context = model.apply_ethics("Correspondence", context)
-    context = model.apply_ethics("Vibration", context)
-    context = model.apply_ethics("Polarity", context)
-    context = model.apply_ethics("Rhythm", context)
-    context = model.apply_ethics("Cause and Effect", context)
-    context = model.apply_ethics("Gender", context)
-    context = model.apply_ethics("Perspective", context)
-    print("Ethical Context:", context)
-
-    # Generate some random data
-    input_dim = 10
-    output_dim = 2
-    data = torch.randn(100, input_dim)
-    targets = torch.randn(100, output_dim)
-
-    # Create a DataLoader
-    dataset = TensorDataset(data, targets)
-    dataloader = DataLoader(dataset, batch_size=10, shuffle=True)
-
-    # Initialize the model, loss function, and optimizer
-    model = SimpleNN(input_dim, output_dim)
-    criterion = nn.MSELoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
-
-    # Training loop
-    for epoch in range(10):
-        for inputs, labels in dataloader:
-            optimizer.zero_grad()
-            outputs = model(inputs)
-            loss = criterion(outputs, labels)
-            loss.backward()
-            optimizer.step()
-        print(f"Epoch {epoch+1}, Loss: {loss.item()}")
+    # Example usage of NLPProcessor
+    nlp_processor = model.nlp_processor
+    message = "Apple is looking at buying U.K. startup for $1 billion"
+    print("Processing message:", message)
+    nlp_processor.process_message(message)
 
 if __name__ == "__main__":
     main()
