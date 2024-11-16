@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Train Script",
+            "program": "${workspaceFolder}/${input:programPath}",
+            "console": "integratedTerminal"
+        }
+    ],
+    "inputs": [
+        {
+            "type": "pickString",
+            "id": "programPath",
+            "description": "Select the program to launch",
+            "options": [
+                "train.py",
+                "src/main.py",
+                "notebooks/ami_ai_project.ipynb"
+            ]
+        }
+    ]
+}

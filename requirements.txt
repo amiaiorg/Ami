@@ -7,3 +7,6 @@ spacy
 requests
 twitchio
 pytest
+datasets
+kaggle
+transformers
