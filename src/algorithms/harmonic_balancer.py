@@ -1,4 +1,3 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
 from .quantum_system import QuantumSystem
@@ -29,6 +28,7 @@ class HarmonicBalancer:
             self.history['scores'].append(score)
             if self.check_convergence():
                 break
+        return self.best_solution, self.best_score
 
     def generate_new_harmony(self, transition_constant):
         # Generate a new harmony vector based on the transition constant

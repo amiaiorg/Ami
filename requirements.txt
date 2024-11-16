@@ -1,4 +1,9 @@
 numpy
 torch
+torchvision
 azureml-core
 matplotlib
+spacy
+requests
+twitchio
+pytest
